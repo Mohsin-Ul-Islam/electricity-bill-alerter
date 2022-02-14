@@ -5,8 +5,9 @@ from twilio.rest import Client
 from google.cloud.secretmanager import SecretManagerServiceClient
 
 
-def handler():
+def handler(_):
     main()
+    return "OK", 200
 
 
 def main():
